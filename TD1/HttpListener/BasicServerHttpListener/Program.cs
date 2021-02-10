@@ -10,23 +10,15 @@ namespace BasicServerHTTPlistener
     {
         private static void Main(string[] args)
         {
-            
-
             if (!HttpListener.IsSupported)
             {
                 Console.WriteLine("A more recent Windows version is required to use the HttpListener class.");
                 return;
             }
-
+ 
+ 
             // Create a listener.
             HttpListener listener = new HttpListener();
-
-            // Trap Ctrl-C and exit 
-            Console.CancelKeyPress += delegate
-            {
-                listener.Stop();
-                System.Environment.Exit(0);
-            };
 
             // Add the prefixes.
             if (args.Length != 0)
@@ -34,10 +26,10 @@ namespace BasicServerHTTPlistener
                 foreach (string s in args)
                 {
                     listener.Prefixes.Add(s);
-                    // don't forget to authorize access to the TCP/IP addresses localhost:xxxx and localhost:yyyy 
+                    // don't forget to authorize access to the TCP/IP addresses localhost:xxxx and localhost:yyyy
                     // with netsh http add urlacl url=http://localhost:xxxx/ user="Tout le monde"
                     // and netsh http add urlacl url=http://localhost:yyyy/ user="Tout le monde"
-                    // user="Tout le monde" is language dependent, use user=Everyone in english 
+                    // user="Tout le monde" is language dependent, use user=Everyone in english
 
                 }
             }
@@ -57,6 +49,10 @@ namespace BasicServerHTTPlistener
                 HttpListenerContext context = listener.GetContext();
                 HttpListenerRequest request = context.Request;
 
+                // print all headers
+                Header header = new Header(request);
+                header.print();
+
                 string documentContents;
                 using (Stream receiveStream = request.InputStream)
                 {
@@ -72,7 +68,7 @@ namespace BasicServerHTTPlistener
                 HttpListenerResponse response = context.Response;
 
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
+                string responseString = getFileContent(request.Url.ToString(), response);
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
@@ -83,6 +79,32 @@ namespace BasicServerHTTPlistener
             }
             // Httplistener neither stop ...
             // listener.Stop();
+        }
+
+        private static string getFileContent(string url, HttpListenerResponse response)
+        {
+            string publicDirectory = "www";
+            string fileName = url.Substring(22);
+
+            string path = publicDirectory + "\\" + fileName;
+            if (fileName == "") fileName = "index.html";
+
+            string res = "404 File Not Found";
+            response.StatusCode = 404;
+            response.StatusDescription = "Not Found";
+
+            try
+            {
+                res = File.ReadAllText(path);
+                response.StatusCode = 200;
+                response.StatusDescription = "OK";
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return res;
         }
     }
 }
