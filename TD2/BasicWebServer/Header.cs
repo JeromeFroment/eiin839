@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -14,9 +15,31 @@ namespace BasicServerHTTPlistener
             this.request = httpListenerRequest;
         }
 
-        public void print()
+        public NameValueCollection getHeaders()
         {
-            System.Collections.Specialized.NameValueCollection headers = request.Headers;
+            return request.Headers;
+        }
+
+        public NameValueCollection getAcceptHeaders()
+        {
+            NameValueCollection headers = getHeaders();
+            NameValueCollection res = new NameValueCollection();
+
+            foreach (string key in headers.AllKeys)
+            {
+                // Tri possible des headers que l'on souhaite afficher
+                /* if (key.Equals(HttpRequestHeader.Accept))
+                {
+                    res.Add(key, headers.Get(key));
+                } */
+                res.Add(key, headers.Get(key));
+            }
+            return res;
+        }
+
+        public void print(String collectionName, NameValueCollection headers)
+        {
+            Console.WriteLine(collectionName);
             // Get each header and display each value.
             foreach (string key in headers.AllKeys)
             {

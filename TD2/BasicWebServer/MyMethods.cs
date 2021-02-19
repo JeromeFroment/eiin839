@@ -26,7 +26,7 @@ namespace BasicServerHTTPlistener
 
         public String myMethods()
         {
-            String res = "<HTML><BODY> <h1>Hello there !</h1>";
+            String res = "<h2>Méthode avec paramètre en URL</h2>";
             int count = 0;
             foreach (string key in getParameters().AllKeys)
             {
@@ -37,15 +37,15 @@ namespace BasicServerHTTPlistener
                 }
                 count++;
             }
-            res += "</BODY></HTML>";
             return res;
         }
 
         public String myMethodsWithExe()
         {
+            Console.WriteLine("Helloooooooo");
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = @"C:\Users\user\Documents\GitHub\eiin839\TD2\ExecTest\bin\Debug\ExecTest.exe"; // Specify exe name.
-            start.Arguments = "Argument1 argument2"; // Specify arguments.
+            start.Arguments = "Argument1 Argument2"; // Specify arguments.
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
             //
@@ -59,6 +59,7 @@ namespace BasicServerHTTPlistener
                 using (StreamReader reader = process.StandardOutput)
                 {
                     string result = reader.ReadToEnd();
+                    Console.WriteLine(result);
                     return result;
                 }
             }
