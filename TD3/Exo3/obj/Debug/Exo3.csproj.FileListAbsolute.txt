@@ -23,3 +23,4 @@ C:\Users\user\Documents\GitHub\eiin839\TD3\Exo3\obj\Debug\Exo3.csproj.CoreCompil
 C:\Users\user\Documents\GitHub\eiin839\TD3\Exo3\obj\Debug\Exo3.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\eiin839\TD3\Exo3\obj\Debug\Exo3.exe
 C:\Users\user\Documents\GitHub\eiin839\TD3\Exo3\obj\Debug\Exo3.pdb
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo3\obj\Debug\Exo3.csprojAssemblyReference.cache

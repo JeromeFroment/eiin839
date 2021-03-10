@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Exo4": {
+      "commandName": "Project",
+      "commandLineArgs": "Lyon 7038"
+    }
+  }
+}

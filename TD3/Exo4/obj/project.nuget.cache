@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "eia788y6K+DZmHTzkeGKMrviLJFbNxtdK/D4sI4oo0lnhdaVIJHwDlmBtcEuoA15z7i/lBEgM1JwJH3zx4FUFw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\eiin839\\TD3\\Exo4\\Exo4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\geocoordinate.netcore\\1.0.0.1\\geocoordinate.netcore.1.0.0.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.device.location.portable\\1.0.0\\system.device.location.portable.1.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'System.Device.Location.Portable 1.0.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' au lieu du framework cible du projet '.NETCoreApp,Version=v3.1'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "System.Device.Location.Portable",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\Exo4.exe
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\Exo4.deps.json
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\Exo4.runtimeconfig.json
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\Exo4.runtimeconfig.dev.json
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\Exo4.dll
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\Exo4.pdb
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.dll
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.pdb
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\GeoCoordinate.NetCore.dll
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\System.Device.Portable.dll
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\user\Documents\GitHub\eiin839\TD3\Exo4\obj\Debug\netcoreapp3.1\Exo4.csproj.CopyComplete

@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Exo4/1.0.0": {
+        "dependencies": {
+          "GeoCoordinate.NetCore": "1.0.0.1",
+          "System.Device.Location.Portable": "1.0.0",
+          "System.Text.Json": "5.0.1"
+        },
+        "runtime": {
+          "Exo4.dll": {}
+        }
+      },
+      "GeoCoordinate.NetCore/1.0.0.1": {
+        "runtime": {
+          "lib/netstandard1.6/GeoCoordinate.NetCore.dll": {
+            "assemblyVersion": "1.0.0.1",
+            "fileVersion": "1.0.0.1"
+          }
+        }
+      },
+      "System.Device.Location.Portable/1.0.0": {
+        "runtime": {
+          "lib/System.Device.Portable.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Text.Json/5.0.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.220.61120"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exo4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GeoCoordinate.NetCore/1.0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VrR5MLkh0u2qka79JcQ/GUrgHwGidayCA7nKy2430qYX/JHdrHLgwp1MuBTSsygWs0s2V6GQ0Hp8HUMatHiWFw==",
+      "path": "geocoordinate.netcore/1.0.0.1",
+      "hashPath": "geocoordinate.netcore.1.0.0.1.nupkg.sha512"
+    },
+    "System.Device.Location.Portable/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VttxozXEleYcK2NiMo7xKMhDCCJbKtjnxcWDmqu703DeceLTI/9jopfEblyZKL0DWHGyOYLEan06yk6Hcv2cXw==",
+      "path": "system.device.location.portable/1.0.0",
+      "hashPath": "system.device.location.portable.1.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/UM3UK1dXKl8Ybysg/21gM4S8DJgkR+yLU8JwqCVbuNqQNImelntgYFAN5QxR8sJJ1kMx//hOUdf0lltosi8cQ==",
+      "path": "system.text.json/5.0.1",
+      "hashPath": "system.text.json.5.0.1.nupkg.sha512"
+    }
+  }
+}
