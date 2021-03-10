@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <!-- The title of the page is written in the tab of the browser. -->
     <title>My first Web Services UI client</title>
+    <link href="main.css" rel="stylesheet"/>
 </head>
 <body>
-    <h1 id="workingTest"></h1>
+    <label for="id">API id : </label>
+    <input id="id">
+    <button onclick="retrieveAllContracts();">Retrieve Contracts</button>
+    <br>
+    <br>
+    <label for="input2">List contracts : </label>
+    <input id="input2" list="datalist">
+    <datalist id="datalist"></datalist>
+    <button onclick="retrieveContractStations()">Retrieve Contract stations</button>
+    <br>
+    <br>
+    <label for="input3">Latitude : </label>
+    <input id="input3">
+    <label for="input4">Longitude : </label>
+    <input id="input4">
+    <button onclick="getClosestStation()">Get Closest Station</button>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
